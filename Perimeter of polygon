@@ -1,0 +1,18 @@
+x1=float(input("Enter the x part of the coordinate: "))
+y1=float(input("Enter the y part of the coordinate: "))
+c=x1
+l=y1
+sum=0
+while True:
+    x2=input("Enter the x part of the coordinate (‘end’ to quit): ")
+    if x2!="end":
+        y2=input("Enter the x part of the coordinate: ")
+        a=float(x2)
+        b=float(y2)
+        sum=sum+((a-c)**2+(b-l)**2)**(1/2)
+        c=float(x2)
+        l=float(y2)
+    else :
+        break
+sum=sum+((x1-c)**2+(y1-l)**2)**(1/2)
+print(sum)
