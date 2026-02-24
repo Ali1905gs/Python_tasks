@@ -1,0 +1,21 @@
+#sade ededler sirasinda n ci ededi tapmaq
+n=int(input("Heddin nomresini daxil edin: "))
+def f(x):
+    i=x
+    l=0
+    while i>0:
+        if x%i==0:
+            l+=1
+        i-=1
+    if l==2:
+        return 1
+    else :
+        return 2
+    
+k=2    
+while n>0:
+    if f(k)==1:
+        n-=1
+        if n==0:
+            print(k)
+    k+=1
